@@ -1,25 +1,67 @@
 # AI Diabetes Prediction 🤖🍬
 
-**وصف المشروع**  
-هذا المشروع يستخدم الذكاء الاصطناعي لتنبؤ احتمالية الإصابة بمرض السكري مبكرًا، بناءً على بيانات طبية منظمة مثل (الجلوكوز، الضغط، مؤشر كتلة الجسم، العمر… إلخ). هدفه هو دعم اتخاذ القرار الطبي وتحسين الكشف المبكر.
+**Project Description**  
+This project utilizes Artificial Intelligence to predict the likelihood of developing diabetes at an early stage based on organized medical data such as glucose levels, blood pressure, BMI, age, and more. The goal is to support medical decision-making and improve early detection.
 
 ---
 
-## 🛠️ التقنيات المستخدمة
+## 🛠️ Technologies Used
 
 - **Python**  
-- مكتبات: `scikit-learn` لصنع النماذج، `pandas`، `numpy`، `matplotlib`/`seaborn` للتصور  
-- تقنيات: SVM، Random Forest، وSMOTE لمعالجة اختلال الفئات  
-- تحسين الأداء باستخدام `GridSearchCV`
+- Libraries: `scikit-learn` for model building, `pandas`, `numpy`, `matplotlib`/`seaborn` for visualization  
+- Techniques: SVM, Random Forest, and SMOTE for handling imbalanced data  
+- Model optimization using `GridSearchCV`
 
 ---
 
-## ⚙️ هيكل المشروع
+## ⚙️ Project Structure
 
 AI-Diabetes-Prediction/
-├── data/ # بيانات PIMA أو ملف CSV
-├── notebooks/ # تحليلات أوليّة وتدريب
-├── src/ # سكربتات المعالجة والتدريب
-├── results/ # رسوم بيانيّة ومصفوفات التشويش
-├── requirements.txt # متطلبات البيئة
+├── data/ # PIMA dataset or CSV files
+├── notebooks/ # Exploratory analysis and model training
+├── src/ # Data processing and model training scripts
+├── results/ # Plots and confusion matrices
+├── requirements.txt # Project dependencies
 └── README.md
+
+
+
+## 🚀 How to Run the Project
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/AbdallahF44/AI-Diabetes-Prediction.git
+cd AI-Diabetes-Prediction
+```
+2. Create a virtual environment and install the dependencies:
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\\Scripts\\activate
+pip install -r requirements.txt
+```
+3. Run training and prediction:
+
+- **Open Jupyter Notebook inside the notebooks/ folder for interactive testing.**
+- **Or run scripts directly from src/:**
+
+```bash
+python src/train_model.py
+python src/predict.py --input data/sample.csv
+```
+## 📊 Results and Evaluation
+- **Performance comparison between SVM and Random Forest**
+- **Used SMOTE to balance the dataset**
+- **Evaluation metrics: Accuracy, Precision, Recall, F1-score, Confusion Matrix**
+- **Visualized results using charts and plots**
+
+## 📝 Contributions
+Contributions are always welcome! Please feel free to open an issue or submit a pull request for improvements.
+
+## 📄 License
+This project is licensed under the MIT License.
+
+## ✉️ Contact Information
+- **GitHub: @AbdallahF44**
+- **Email: abdallahfawziabumostafa@gmail.com**
+
